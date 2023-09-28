@@ -1,5 +1,6 @@
-import 'dart:html';
+// import 'dart:html';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../res/constants.dart';
@@ -55,7 +56,9 @@ class DownloadButton extends StatelessWidget {
 }
 
 downLoadFile(url) {
-  AnchorElement anchorElement = AnchorElement(href: url);
-  anchorElement.download = "CV";
-  anchorElement.click();
+  // if (kIsWeb) {
+  //   AnchorElement anchorElement = AnchorElement(href: url);
+  //   anchorElement.download = "CV";
+  //   anchorElement.click();
+  // }
 }
